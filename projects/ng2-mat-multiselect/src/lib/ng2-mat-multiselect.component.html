@@ -1,0 +1,39 @@
+<mat-form-field class="selectField" [formGroup]="form" [appearance]="appearance" [color]="color">
+  <mat-label>{{inputTitle}}</mat-label>
+  <mat-select formControlName="selectControl" multiple (selectionChange)="onSelectionChange($event)" (openedChange)="toggleSelectPanel()">
+      <mat-select-trigger>
+          <mat-chip-listbox>
+              <mat-chip-row class="display-chip" [color]="color" highlighted selected="true"
+                  *ngFor="let item of form.get('selectControl')?.value" [removable]="true" (removed)="onChipRemoved(item)">
+                  {{ item[displayKey] }}
+                  <mat-icon matChipRemove>cancel</mat-icon>
+              </mat-chip-row>
+          </mat-chip-listbox>
+      </mat-select-trigger>
+
+      <mat-checkbox matTooltip="Select All" class="searchbar-margin" [checked]="allComplete" [color]="color"
+          (change)="setAll($event.checked)">
+      </mat-checkbox>
+      <mat-form-field appearance="outline" class="innerinput" [color]="color">
+          <mat-label class="searchLabel">Search</mat-label>
+          <input type="text" formControlName="itemControl" matInput class="search" name="search" />
+      </mat-form-field>
+      <ng-container *ngIf="itemsByFiltered; else elsePart">
+          <mat-option class="inner-padding" [id]="item[displayKey]" (click)="changeCheck(item)"
+              *ngFor="let item of itemsByFiltered" [value]="item" >
+              <span>
+                  <ul class="inner-option">
+                      <li>
+                        {{ item[displayKey] }}
+                      </li>
+                  </ul>
+              </span>
+          </mat-option>
+      </ng-container>
+      <ng-template #elsePart>
+          <div class="noDataText">
+              <span>No Data Found!</span>
+          </div>
+      </ng-template>
+  </mat-select>
+</mat-form-field>

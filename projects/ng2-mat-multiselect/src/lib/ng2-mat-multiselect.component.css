@@ -1,0 +1,88 @@
+.selectField {
+  width: 100%;
+}
+
+.mat-input-element {
+  height: 30px !important;
+  /* Adjust the height to your preference */
+}
+
+.innerinput div:first-child {
+  height: 2.6rem;
+}
+
+.innerinput .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex {
+  height: 100% !important;
+  align-items: center !important;
+}
+
+.innerinput .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+  top: 1.20rem !important;
+  font-size: 0.8rem;
+}
+
+.innerinput .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+  -mat-mdc-form-field-label-transform: translateY(-25.75px) scale(var(--mat-mdc-form-field-floating-label-scale, 0.75)) !important;
+  transform: translateY(-25px) scale(0.75) !important;
+}
+
+.option-text label {
+  word-break: break-all !important;
+
+}
+
+.mdc-evolution-chip__text-label {
+  white-space: normal !important;
+}
+
+.mat-mdc-select-value {
+  max-height: 150px;
+  overflow-y: auto !important;
+}
+
+.innerinput {
+  width: calc(100% - 72px) !important;
+}
+
+.innerinput .search {
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+  line-height: 2rem;
+}
+
+
+.display-chip {
+  word-break: break-all !important;
+  overflow: auto;
+  height: fit-content !important;
+  padding: 0.35rem;
+  margin-right: 0.3rem !important;
+}
+
+.noDataText {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.inner-option {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.inner-padding {
+  padding-left: 1.8rem !important;
+}
+
+.searchbar-margin {
+  padding: 0 0.5rem;
+  min-height: 3rem;
+}
+
+.optionWords {
+  word-break: break-all !important;
+}

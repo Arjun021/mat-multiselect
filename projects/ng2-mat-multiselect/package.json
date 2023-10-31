@@ -1,0 +1,14 @@
+{
+  "name": "ng2-mat-multiselect",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": ["multiselect", "material", "mat-multiselect", "ng2-mat-multiselect"],
+  "peerDependencies": {
+    "@angular/common": "^16.2.0",
+    "@angular/core": "^16.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
