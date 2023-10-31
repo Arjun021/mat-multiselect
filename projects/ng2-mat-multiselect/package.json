@@ -1,6 +1,6 @@
 {
   "name": "ng2-mat-multiselect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "Angular material select box with multiple selection and search support.",
   "keywords": ["multiselect", "material", "mat-multiselect", "ng2-mat-multiselect"],
