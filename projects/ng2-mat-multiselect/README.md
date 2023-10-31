@@ -1,4 +1,4 @@
-# ng2-mat-multiselect
+﻿# ng2-mat-multiselect
 
 Angular material select box with multiple selection and search support.
 
@@ -20,14 +20,15 @@ Angular material select box with multiple selection and search support.
 	```
 2. Install the library 
       ```base
-      npm install ng2-mat-multi-select --save
+      npm install ng2-mat-multiselect --save
       ```
 
 3. Import in your module file
 	 ```base
+	 import { Ng2MatMultiselectModule } from  'ng2-mat-multiselect';
     imports: [
     ...
-    Ng2MatMultiSelectModule
+    Ng2MatMultiselectModule
     ],
 	  ```
 
